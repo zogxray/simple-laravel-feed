@@ -58,7 +58,7 @@ Route::get('feed/{format}', function ($format) {
             'link' => $post['link'],
             'description' => $post['description'],
             'author' => $post['author'],
-            'enclosure' => url($post['image']),
+            'enclosure' => $post['image'],
             'pubdate' => $post['pubdate'],
         ]);
     }
