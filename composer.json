@@ -1,0 +1,26 @@
+{
+  "name": "zogxray/simple-laravel-feed",
+  "description": "Feed generator for Laravel",
+  "keywords": ["laravel", "feed", "generator", "rss", "atom"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Viktor Pavlov",
+      "email": "zogxray@gmail.com",
+      "role": "Developer",
+      "homepage": "https://pavlov.od.ua"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "illuminate/support": "^5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zogxray\\Feed\\": "src/"
+    }
+  }
+}
