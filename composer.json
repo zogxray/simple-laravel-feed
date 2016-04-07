@@ -3,6 +3,7 @@
   "description": "Feed generator for Laravel",
   "keywords": ["laravel", "feed", "generator", "rss", "atom"],
   "license": "MIT",
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Viktor Pavlov",
