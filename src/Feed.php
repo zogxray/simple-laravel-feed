@@ -20,9 +20,9 @@ class Feed {
             $item->pubdate =  $this->formatDate($item->pubdate,$format);
         }
         if($format == 'atom') {
-            $this->ctype = 'application/atom+xml';
+            $this->content_type = 'application/atom+xml';
         } else {
-            $this->ctype = 'application/rss+xml';
+            $this->content_type = 'application/rss+xml';
         }
         if($cache == TRUE && Cache::has('feed-'.$format)) {
             return response()->view('feed::'.$format,Cache::get('feed-'.$format))->header('Content-Type',$this->content_type)->header('Content-Type','text/xml');
